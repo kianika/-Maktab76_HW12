@@ -31,7 +31,7 @@ margin-bottom: $amount;
 }
 
  */
-.wrapper {
+.form {
   width: 100vw;
   height: 100vh;
   display: -webkit-box;
@@ -46,7 +46,7 @@ margin-bottom: $amount;
   background-color: #eee9e9;
 }
 
-.wrapper .container {
+.form_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,7 +69,7 @@ margin-bottom: $amount;
           box-shadow: 10px 10px 20px #cfd1d1;
 }
 
-.wrapper .container .form-left {
+.form_container_left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,8 +90,8 @@ margin-bottom: $amount;
   padding-right: 30px;
   padding-bottom: 20px;
   padding-left: 30px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(14%, #251d65), color-stop(45%, #1b1845));
-  background: linear-gradient(180deg, #251d65 14%, #1b1845 45%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(14%, #4b219e), color-stop(45%, #291555));
+  background: linear-gradient(180deg, #4b219e 14%, #291555 45%);
   color: #fcf8f8;
   width: 20vw;
   border-radius: 8px;
@@ -101,22 +101,26 @@ margin-bottom: $amount;
   left: 0;
 }
 
-.wrapper .container .form-left label {
+.form_container_left label {
   color: #bebaba;
 }
 
-.wrapper .container .form-left p {
+.form_container_left label i {
+  padding-right: 6px;
+}
+
+.form_container_left p {
   margin-top: 0;
 }
 
-.wrapper .container .form-left h1 {
+.form_container_left h1 {
   margin-top: 10px;
   margin-bottom: 30px;
   font-size: 30px;
   font-weight: normal;
 }
 
-.wrapper .container .form-left .logo {
+.form_container_left .logo {
   padding-top: 215px;
   padding-right: 0;
   padding-bottom: 10px;
@@ -134,7 +138,7 @@ margin-bottom: $amount;
           column-gap: 16px;
 }
 
-.wrapper .container .form-right {
+.form_container_right {
   width: 40vw;
   height: 100%;
   color: #bebaba;
@@ -161,18 +165,24 @@ margin-bottom: $amount;
   padding-left: 40px;
 }
 
-.wrapper .container .form-right h1 {
+.form_container_right h1 {
   margin-bottom: 0;
   font-size: 30px;
   font-weight: normal;
   color: #2a2929;
 }
 
-.wrapper .container .form-right hr {
+.form_container_right hr {
   margin: 0;
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
 }
 
-.wrapper .container .form-right .input {
+.form_container_right .input {
+  background-color: white;
   margin-bottom: 15px;
   width: 100%;
   height: 45px;
@@ -195,7 +205,7 @@ margin-bottom: $amount;
   row-gap: 4px;
 }
 
-.wrapper .container .form-right .input input {
+.form_container_right .input input {
   width: 100%;
   height: 100%;
   padding: 10px 0;
@@ -203,15 +213,15 @@ margin-bottom: $amount;
   border-radius: 5px;
 }
 
-.wrapper .container .form-right textarea {
+.form_container_right textarea {
   width: 100%;
   height: auto;
   border: 1px solid #bebaba;
   border-radius: 5px;
 }
 
-.wrapper .container .form-right button {
-  background-color: #1b1845;
+.form_container_right button {
+  background-color: #291555;
   color: white;
   font-size: 20px;
   text-align: center;

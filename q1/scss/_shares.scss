@@ -33,6 +33,10 @@
     padding-left: $left;
 }
 
+@mixin borderRadius($size){
+    border-radius: $size;
+}
+
 
 /* @mixin space($type: margin, $direction: all, $amount: $medium) {
 @if $type == padding {
